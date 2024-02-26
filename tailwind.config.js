@@ -14,10 +14,11 @@ export default {
         'branco': '#F5F5F5',
         'cinza': '#BDBDBD',
         'cinza-escuro': '#4F4F4F',
+        'verde-hover': '#B2E887'
       },
       fontFamily: {
-        'poppins': ['Poppins'],
-        'averia': ['Averia-Sans-Libre', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'averia': ['Averia-Libre', 'system-ui'],
       },
     },
   },

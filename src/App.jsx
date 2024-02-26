@@ -1,12 +1,13 @@
 import { useState } from 'react'
-import Footer from './Components/Footer'
+import BotaoPequeno from './components/BotaoPequeno'
+import BarraPesquisa from './components/BarraPesquisa'
 
 function App() {
 
   return (
-    <>
-      <Footer />
-    </>
+    <div className="h-screen flex justify-center items-center flex-col gap-10">
+        
+    </div>
   )
 }
 
