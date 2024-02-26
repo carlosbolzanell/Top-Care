@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="bg-secundaria font-poppins font-light">
+        <div className="bg-secundaria font-poppins font-light absolute bottom-0">
             <div className="px-[70px] py-[30px] flex flex-row justify-between items-start text-lg">
                 <div className="pr-8">
                     <img className="h-[70px]" src="./assets/LogoFooter.png" />
@@ -30,7 +30,7 @@ const Footer = () => {
 
                 <div>
                     <h5>Métodos de pagamento</h5>
-                    <img className="w-[200px]" src="./imgs/Pagamento.png" />
+                    <img className="w-[200px]" src="./assets/Pagamento.png" />
                 </div>
             </div>
                     
