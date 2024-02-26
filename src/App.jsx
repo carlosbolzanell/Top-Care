@@ -1,10 +1,11 @@
 import { useState } from 'react'
+import Footer from './Components/Footer'
 
 function App() {
 
   return (
     <>
-    <h1 className='underline'>Olá mundo</h1>
+    
     </>
   )
 }
