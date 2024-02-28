@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Avaliacao from './Components/Avaliacao'
 import CardProduto from './Components/CardProduto'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
@@ -8,19 +9,12 @@ function App() {
 
   return (
     <>
-      <HeaderLogado />
+    <div className='flex flex-col gap-6 bg-branco'>
+        <HeaderLogado />
 
-      <p>Espalcoasdncahsdb</p>
+      <Avaliacao/>
+    </div>
 
-      <Header />
-
-      <p>sdsdfasfasdfsf</p>
-
-      <CardProduto />
-
-      <p>sdfcbosudvfouyfouysae</p>
-
-      <Footer />
     </>
   )
 }

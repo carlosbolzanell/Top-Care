@@ -6,20 +6,20 @@ const Footer = () => {
                     <img className="h-[70px]" src="./assets/logo.png" />
                 </div>
 
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 text-base">
                     <h5>Empresa</h5>
-                    <a className="underline text-cinza-escuro">Sobre nós</a>
-                    <a className="underline text-cinza-escuro">Perguntas frequentes</a>
+                    <a className="underline text-cinza-escuro text-sm">Sobre nós</a>
+                    <a className="underline text-cinza-escuro text-sm">Perguntas frequentes</a>
                 </div>
 
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 text-base">
                     <h5>Fale conosco</h5>
-                    <a className="underline text-cinza-escuro">Email</a>
-                    <a className="underline text-cinza-escuro">Telefone/ SMS</a>
+                    <a className="underline text-cinza-escuro text-sm">Email</a>
+                    <a className="underline text-cinza-escuro text-sm">Telefone/ SMS</a>
                 </div>
 
                 <div>
-                    <h5>Nossas redes sociais</h5>
+                    <h5 className="text-base">Nossas redes sociais</h5>
                     <div className="flex flex-row gap-3 pt-[20px] justify-center">
                         <i className="fa-brands fa-instagram fa-xl" style={{color: "#322828",}}></i>
                         <i className="fa-brands fa-facebook fa-xl" style={{color: "#322828",}}></i>
@@ -28,9 +28,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div>
-                    <h5>Métodos de pagamento</h5>
-                    <img className="w-[200px]" src="./assets/footer-pagamento.png" />
+                <div className="flex flex-col gap-2">
+                    <h5 className="text-sm">Métodos de pagamento</h5>
+                    <img className="w-[190px]" src="./assets/footer-pagamento.png" />
                 </div>
             </div>
                     
