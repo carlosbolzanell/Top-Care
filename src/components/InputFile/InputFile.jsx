@@ -42,10 +42,8 @@ const Input = ({ dropzone }) => {
 }
 const HasFile = ({ file }) => {
     return (
-        <div className="border border-black rounded-full h-48 w-48 bg-branco">
-            <div>
-                <img src={file} alt="" />
-            </div>
+        <div className="rounded-full h-48 w-48 bg-branco">
+            <img src={file} alt="" className="w-full rounded-full"/>
         </div>
     )
 }
