@@ -35,7 +35,7 @@ const Input = ({ dropzone }) => {
     const { getRootProps, getInputProps, isDragActive } = dropzone;
     return (
         <div {...getRootProps()} className={`border border-black rounded-full h-48 w-48 bg-branco flex justify-center items-center ${isDragActive ? 'border-primaria' : 'border-black'}`}>
-            <FontAwesomeIcon icon={faFileImage}/>
+            <FontAwesomeIcon icon={faFileImage} className="text-8xl"/>
             <input {...getInputProps()} className="hidden" />
         </div>
     )
