@@ -1,6 +1,8 @@
 import { useCallback } from "react";
 import { useState } from "react"
 import { useDropzone } from "react-dropzone";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileImage } from "@fortawesome/free-regular-svg-icons";
 
 export default function InputFile() {
     const [file, setFile] = useState(null);
@@ -24,10 +26,7 @@ export default function InputFile() {
             'image/jpg': ['.jpg']
         }
     })
-    if (file) {
-        console.log(file);
-        return <HasFile file={file} />;
-    }
+    if (file) return <HasFile file={file} />;
 
     return <Input dropzone={dropzone} />
 
@@ -35,7 +34,8 @@ export default function InputFile() {
 const Input = ({ dropzone }) => {
     const { getRootProps, getInputProps, isDragActive } = dropzone;
     return (
-        <div {...getRootProps()} className={`border border-black rounded-full h-48 w-48 bg-branco ${isDragActive ? 'border-primaria' : 'border-black'}`}>
+        <div {...getRootProps()} className={`border border-black rounded-full h-48 w-48 bg-branco flex justify-center items-center ${isDragActive ? 'border-primaria' : 'border-black'}`}>
+            <FontAwesomeIcon icon={faFileImage}/>
             <input {...getInputProps()} className="hidden" />
         </div>
     )
