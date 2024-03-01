@@ -32,7 +32,7 @@ export default function InputFile() {
 const Input = ({ dropzone }) => {
     const { getRootProps, getInputProps, isDragActive } = dropzone;
     return (
-        <div {...getRootProps()} className={`border border-black rounded-full h-48 w-48 bg-branco flex justify-center items-center ${isDragActive ? 'border-primaria' : 'border-black'}`}>
+        <div {...getRootProps()} className={`border border-black rounded-full h-full w-full bg-branco flex justify-center items-center ${isDragActive ? 'border-primaria' : 'border-black'}`}>
             <img src="./assets/imagem-galeria.svg" alt="" className="w-[40%]"/>
             <input {...getInputProps()} className="hidden" />
         </div>
@@ -40,7 +40,7 @@ const Input = ({ dropzone }) => {
 }
 const HasFile = ({ file }) => {
     return (
-        <div className="rounded-full h-48 w-48 bg-branco">
+        <div className="rounded-full h-full w-full bg-branco">
             <img src={file} alt="" className="w-full h-full rounded-full"/>
         </div>
     )

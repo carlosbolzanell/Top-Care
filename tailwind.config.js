@@ -21,7 +21,7 @@ module.exports = withMT({
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
-        'averia': ['Averia-Libre', 'system-ui'],
+        'averia': ["Averia Serif Libre", 'serif'],
       },
     },
   },
