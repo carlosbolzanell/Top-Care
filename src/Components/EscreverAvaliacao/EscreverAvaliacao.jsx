@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, } from '@fortawesome/free-regular-svg-icons'
-import { faStar, } from '@fortawesome/free-solid-svg-icons'
+import { faStar, faPaperPlane, } from '@fortawesome/free-regular-svg-icons'
 
 const EscreverAvaliacao = () => {
     return (
@@ -30,12 +29,18 @@ const EscreverAvaliacao = () => {
                         <p className='pl-2 py-2 font-regular text-xs text-cinza-escuro'>
                             Deixe sua avaliação aqui também!
                         </p>
-                        <div>
-                            <div>
-                                <input placeholder='Digite sua avaliação' className='font-regular text-xs p-2 rounded-lg'>
-                                </input>
+                        <div className='w-full flex flex-row justify-center gap-2'>
+                            <div className='flex flex-row w-[80%] justify-between gap-1 bg-white border-[1px] border-cinza rounded-lg pr-2'>
+                                <input placeholder='Digite sua avaliação' className='w-full font-regular text-xs p-3 rounded-lg'/>
+                                <div className='flex gap-1 items-center'>
+                                    <FontAwesomeIcon icon={faStar} style={{ color: "#FFD601", }} />
+                                    <FontAwesomeIcon icon={faStar} style={{ color: "#FFD601", }} />
+                                    <FontAwesomeIcon icon={faStar} style={{ color: "#FFD601", }} />
+                                    <FontAwesomeIcon icon={faStar} style={{ color: "#FFD601", }} />
+                                    <FontAwesomeIcon icon={faStar} style={{ color: "#FFD601", }} />
+                                </div>
                             </div>
-                            <a href=''></a>
+                            <button className='bg-secundaria px-3 rounded-lg' href=''><FontAwesomeIcon icon={faPaperPlane} size="lg" style={{ color: "#4F4F4F", }} /></button>
                         </div>
                     </div>
                 </div>
