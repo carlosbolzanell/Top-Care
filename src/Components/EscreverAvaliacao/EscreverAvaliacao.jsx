@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faPaperPlane, } from '@fortawesome/free-regular-svg-icons'
+import { Input } from "@material-tailwind/react";
 
 const EscreverAvaliacao = () => {
     return (
@@ -31,6 +32,8 @@ const EscreverAvaliacao = () => {
                         </p>
                         <div className='w-full flex flex-row justify-center gap-2'>
                             <div className='flex flex-row w-[80%] justify-between gap-1 bg-white border-[1px] border-cinza rounded-lg pr-2'>
+                                <Input variant="outlined" label="Outlined" placeholder="Outlined"/>
+                                
                                 <input placeholder='Digite sua avaliação' className='w-full font-regular text-xs p-3 rounded-lg'/>
                                 <div className='flex gap-1 items-center'>
                                     <FontAwesomeIcon icon={faStar} style={{ color: "#FFD601", }} />

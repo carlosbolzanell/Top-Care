@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "path-to-your-node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -14,13 +17,14 @@ export default {
         'branco': '#F5F5F5',
         'cinza': '#BDBDBD',
         'cinza-escuro': '#4F4F4F',
+        'verde-hover': '#B2E887'
       },
       fontFamily: {
-        'poppins': ['Poppins'],
-        'averia': ['Averia-Sans-Libre', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'averia': ['Averia-Libre', 'system-ui'],
       },
     },
   },
   plugins: [],
-}
+})
 
