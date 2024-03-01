@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import BotaoPequeno from './components/BotaoPequeno'
-import BarraPesquisa from './components/BarraPesquisa'
 import CadastroPet from './components/pop-up/CadastroPet'
-
+import Select from './components/Select/Select'
 function App() {
 
   return (
-    <div className="h-screen flex justify-center items-center flex-col gap-10">
+      <div className="h-screen flex justify-center items-center flex-col gap-10">
         <CadastroPet />
-    </div>
-  )
+      </div>
+      )
 }
 
-export default App
+      export default App;
