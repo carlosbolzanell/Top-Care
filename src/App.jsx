@@ -5,12 +5,13 @@ import TituloLinha from './Components/TituloLinha'
 import Plano from './Components/Plano'
 import Seletor from './Components/pop-up/Seletor'
 import HistoricoConsulta from './Components/HistoricoConsulta/HistoricoConsulta'
-
+import Endereco from './Components/Endereço/Endereco'
+import CartõesSalvos from './Components/CartõesSalvos'
 function App() {
 
   return (
     <div className='flex justify-center items-center h-screen'>
-      <HistoricoConsulta/>
+      <CartõesSalvos/>
     </div>
   )
 }

@@ -14,6 +14,7 @@ export default {
         'branco': '#F5F5F5',
         'cinza': '#BDBDBD',
         'cinza-escuro': '#4F4F4F',
+        'cinza-letras': '#5C5C5C'
       },
       fontFamily: {
         'poppins': ['Poppins'],
