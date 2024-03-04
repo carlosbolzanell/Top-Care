@@ -1,8 +1,8 @@
-const TituloLinha = () => {
+const TituloLinha = (props) => {
     return (
-        <div className="mx-16 mt-16">
-        <p className="font-averia text-xl text-preto text-[30px] text-bold">Pagamento</p>
-        <div className="border-t border-black mt-3"></div>
+        <div className="mx-14 p-6">
+            <p className="font-averia text-[1.4rem] text-preto font-black">{props.titulo}</p>
+            <div className="border-t border-preto mt-3 px-30"></div>
         </div>
     )
 }
