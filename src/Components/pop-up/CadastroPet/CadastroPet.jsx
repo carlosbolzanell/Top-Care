@@ -2,8 +2,15 @@ import InputFile from "../../InputFile/InputFile"
 import Select from "../../Select"
 import InputText from "../../InputText/InputText";
 import BotaoPequeno from "../../BotaoPequeno";
+import { useState } from "react";
+
+const racasCachorro = ["Afegão Hound","Affenpinscher","Airedale Terrier","Akita","American Staffordshire Terrier","Basenji","Basset Hound","Beagle","Beagle Harrier","Bearded Collie","Bedlington Terrier","Bichon Frisé","Bloodhound","Bobtail","Boiadeiro Australiano","Boiadeiro Bernês","Border Collie","Border Terrier","Borzoi","Boston Terrier","Boxer","Buldogue Francês","Buldogue Inglês","Bull Terrier","Bulmastife","Cairn Terrier","Cane Corso","Cão de Água Português","Cão de Crista Chinês","Cavalier King Charles Spaniel","Chesapeake Bay Retriever","Chihuahua","Chow Chow","Cocker Spaniel Americano","Cocker Spaniel Inglês","Collie","Coton de Tuléar","Dachshund","Dálmata","Dandie Dinmont Terrier","Dobermann","Dogo Argentino","Dogue Alemão","Fila Brasileiro","Fox Terrier (Pelo Duro e Pelo Liso)","Foxhound Inglês","Galgo Escocês","Galgo Irlandês","Golden Retriever","Grande Boiadeiro Suiço","Greyhound","Grifo da Bélgica","Husky Siberiano","Jack Russell Terrier","King Charles","Komondor","Labradoodle","Labrador Retriever","Lakeland Terrier","Leonberger","Lhasa Apso","Lulu da Pomerânia","Malamute do Alasca","Maltês","Mastife","Mastim Napolitano","Mastim Tibetano","Norfolk Terrier","Norwich Terrier","Papillon","Pastor Alemão","Pastor Australiano","Pinscher Miniatura","Poodle","Pug","Rottweiler","Sem Raça Definida (SRD)","ShihTzu","Silky Terrier","Skye Terrier","Staffordshire Bull Terrier","Terra Nova","Terrier Escocês","Tosa","Weimaraner","Welsh Corgi (Cardigan)","Welsh Corgi (Pembroke)","West Highland White Terrier","Whippet","Xoloitzcuintli","Yorkshire Terrier"]
 
 export default function CadastroPet() {
+    const [pet, setPet] = useState("");
+    const [raca, setRaca] = useState("");
+    const [nome, setNome] = useState("");
+    const [idade, setIdade] = useState("");
     return (
         <div className="border border-black w-[60%] h-[40%] flex justify-center flex-col bg-branco rounded-lg">
             <div className="flex items-center justify-center">
@@ -19,8 +26,7 @@ export default function CadastroPet() {
                     <InputFile />
                 </div>
                 <div className="flex flex-col gap-4 w-[35%]">
-                    <Select label={"Qual o seu pet?"} />
-                    <Select label={"Qual a raça?"} />
+                    <Select label={"Qual o seu pet?"} options={racasCachorro}/>
                 </div>
                 <div className="flex flex-col gap-4 w-[35%]">
                     <InputText label="Qual o nome do pet?" type="text" />
