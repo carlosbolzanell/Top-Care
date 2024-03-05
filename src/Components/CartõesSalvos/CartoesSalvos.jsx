@@ -3,13 +3,14 @@ import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 const CartoesSalvos = () => {
     return (
-        <div className="bg-branco flex flex-row items-center p-4">
-            <div className="flex flex-col pr-20  border-r-indigo-500 ">
-                <p>Cartão de crédito</p>
+        <div className="bg-branco flex flex-row items-center p-4 font-poppins b rounded-lg text-sm">
+            <div className="flex flex-col">
+                <p className="mb-[2%]">Cartão de crédito</p>
                 <p>Kristian Erdmann</p>
             </div>
+            <div className="px-10 text-3xl font-extralight">|</div>
             <div className="">
-                <p>Validade 12/28</p>
+                <p className="mb-[2%]">Validade 12/28</p>
                 <p>Final 9875</p>
             </div>  
             <img src="./assets/logo-mastercard.png" className="px-10" alt="Mastercard Logo" />
@@ -18,8 +19,6 @@ const CartoesSalvos = () => {
                 <button className=""><FontAwesomeIcon icon={faAngleUp} /></button>
                 <button className=""><FontAwesomeIcon icon={faAngleDown} /></button>
             </div>
-            
-
         </div>
     );
 }
