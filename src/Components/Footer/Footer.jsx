@@ -1,9 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faSquareFacebook } from '@fortawesome/free-regular-svg-icons'
+
 const Footer = () => {
     return (
         <div className="bg-secundaria font-poppins font-light">
             <div className="px-[70px] py-[30px] flex flex-row justify-between items-start text-lg">
                 <div className="pr-8">
-                    <img className="h-[70px]" src="./assets/logo.png" />
+                    <img className="h-[30%]" src="./assets/logo.png" />
                 </div>
 
                 <div className="flex flex-col gap-1 text-base">
@@ -21,24 +24,24 @@ const Footer = () => {
                 <div>
                     <h5 className="text-base">Nossas redes sociais</h5>
                     <div className="flex flex-row gap-3 pt-[20px] justify-center">
-                        <i className="fa-brands fa-instagram fa-xl" style={{color: "#322828",}}></i>
-                        <i className="fa-brands fa-facebook fa-xl" style={{color: "#322828",}}></i>
-                        <i className="fa-brands fa-youtube fa-xl" style={{color: "#322828",}}></i>
-                        <i className="fa-brands fa-twitter fa-xl" style={{color: "#322828",}}></i>
+                        <FontAwesomeIcon icon={faInstagram} size="sm" style={{ color: "#FFD43B", }} />
+                        <FontAwesomeIcon icon={faSquareFacebook} />
+                        <FontAwesomeIcon icon={faInstagram} size="sm" style={{ color: "#FFD43B", }} />
+                        <FontAwesomeIcon icon={faInstagram} size="sm" style={{ color: "#FFD43B", }} />
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <h5 className="text-sm">Métodos de pagamento</h5>
+                    <h5 className="text-base">Métodos de pagamento</h5>
                     <img className="w-[190px]" src="./assets/footer-pagamento.png" />
                 </div>
             </div>
-                    
+
             <div className="flex flex-row justify-between text-cinza-escuro py-2 px-4 text-[10px] border-t border-cinza-escuro">
                 <p>Copright 2023 © Todos os direitos reservados a Top Care Pet Shop</p>
                 <p>Compra segura - A TopCare garante segurança para suas informações pessoais e financeiras</p>
             </div>
-            
+
         </div>
     )
 }

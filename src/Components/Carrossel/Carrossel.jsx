@@ -1,4 +1,4 @@
-import CardProduto from "../CardProduto";
+import CardProduto from "../Cards/CardProduto";
 import TituloLinha from "../TituloLinha/TituloLinha";
 
 import { Carousel } from "@material-tailwind/react";

@@ -1,4 +1,3 @@
-
 const CardPet = () => {
     return (
         <div className="flex felx-row bg-branco shadow-lg w-[18%] py-6 items-center justify-center gap-4 rounded-lg">
