@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faSquareFacebook } from '@fortawesome/free-regular-svg-icons'
-
 const Footer = () => {
     return (
         <div className="bg-secundaria font-poppins font-light">
@@ -24,10 +21,7 @@ const Footer = () => {
                 <div>
                     <h5 className="text-base">Nossas redes sociais</h5>
                     <div className="flex flex-row gap-3 pt-[20px] justify-center">
-                        <FontAwesomeIcon icon={faInstagram} size="sm" style={{ color: "#FFD43B", }} />
-                        <FontAwesomeIcon icon={faSquareFacebook} />
-                        <FontAwesomeIcon icon={faInstagram} size="sm" style={{ color: "#FFD43B", }} />
-                        <FontAwesomeIcon icon={faInstagram} size="sm" style={{ color: "#FFD43B", }} />
+                        
                     </div>
                 </div>
 

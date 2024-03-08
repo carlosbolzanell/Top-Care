@@ -5,11 +5,11 @@ import { faBagShopping, } from '@fortawesome/free-solid-svg-icons'
 const HeaderLogado = () => {
     return (
         <div className="bg-primaria px-20 py-3 flex flex-row font-poppins justify-between items-center">
-            <div className='w-[33%]'>
-                <img className="w-[18%]" src="./assets/logo.png"/>
+            <div className='w-[25%]'>
+                <img className="w-[25%]" src="./assets/logo.png"/>
             </div>
 
-            <div className="flex flex-row gap-16 w-[33%] justify-center">
+            <div className="flex flex-row w-[50%] justify-between">
                 <a className="hover:underline text-sm" href="#">Produtos</a>
                 <a className="hover:underline text-sm" href="#">Serviços</a>
                 <a className="hover:underline text-sm" href="#">Lojas</a>
@@ -19,7 +19,7 @@ const HeaderLogado = () => {
             </div>
 
 
-            <div className='flex flex-row gap-6 w-[33%] justify-end'>
+            <div className='flex flex-row gap-6 w-[25%] justify-end'>
                 <FontAwesomeIcon icon={faHeart} size="xl" style={{color: "#322828",}} />    
                 <FontAwesomeIcon icon={faBagShopping} size="xl" style={{color: "#322828",}} />        
                 <FontAwesomeIcon icon={faUser} size="xl"  style={{color: "#322828",}} />     

@@ -29,10 +29,8 @@ function App() {
       <div className='bg-branco flex flex-col gap-6'>
 
         <Header />
-        <HeaderLogado />
         {/* <Carrossel titulo={"Produtos"}/> */}
-
-        {/* <Carrinho /> */}
+        <Carrinho />
         <Footer />
       </div>
 

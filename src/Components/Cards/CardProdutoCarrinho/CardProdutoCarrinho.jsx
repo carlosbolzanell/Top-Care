@@ -3,7 +3,7 @@ import { Button } from "@material-tailwind/react";
 import React, { useState } from "react";
 
 const CardProdutoCarrinho = () => {
-    const [quantidade, setQuantidade] = useState(0)
+    const [quantidade, setQuantidade] = useState(1)
 
     const aumentar = () => {
         setQuantidade(quantidade + 1)
