@@ -17,7 +17,7 @@ module.exports = withMT({
         'branco': '#F5F5F5',
         'cinza': '#BDBDBD',
         'cinza-escuro': '#4F4F4F',
-        'verde-hover': '#B2E887'
+        'verde-hover': '#9EBF40'
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

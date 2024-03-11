@@ -23,7 +23,7 @@ const CardProduto = () => {
             </div>
 
             <div className='flex flex-row gap-1 justify-between'>
-                <button className='transition ease-in-out delay-150 duration-200 text-xs font-medium bg-secundaria rounded-lg w-[76%] h-7 hover:bg-[#6F8337] hover:text-branco'>Comprar agora</button>
+                <button className='transition ease-in-out delay-150 duration-200 text-xs font-medium bg-secundaria rounded-lg w-[76%] h-7 hover:bg-verde-hover'>Comprar agora</button>
                 <button className='bg-primaria rounded-lg w-[24%]'><FontAwesomeIcon icon={faBagShopping} style={{ color: "#322828", }} /></button>
             </div>
         </div>

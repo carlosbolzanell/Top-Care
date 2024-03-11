@@ -16,8 +16,8 @@ const Header = () => {
 
 
             <div className='flex flex-row gap-6 items-center w-[25%] justify-end'>
-                <button className='bg-terciaria rounded-lg py-1.5 px-2'>Login</button>
-                <button className='bg-terciaria rounded-lg py-1.5 px-2'>Cadastro</button>   
+                <button className='bg-terciaria rounded-lg w-[112px] py-[5px] px-2'>Login</button>
+                <button className='bg-terciaria rounded-lg w-[112px] py-[5px] px-2'>Cadastro</button>   
             </div>
         </div>
     )
