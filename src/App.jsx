@@ -7,11 +7,12 @@ import Seletor from './Components/pop-up/Seletor'
 import HistoricoConsulta from './Components/HistoricoConsulta/HistoricoConsulta'
 import Endereco from './Components/Endereço/Endereco'
 import CartõesSalvos from './Components/CartõesSalvos'
+import Serviços from './Components/Serviços'
 function App() {
 
   return (
     <div className='flex justify-center items-center h-screen'>
-      <CartõesSalvos/>
+      <Serviços/>
     </div>
   )
 }
