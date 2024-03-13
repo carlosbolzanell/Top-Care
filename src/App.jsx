@@ -9,12 +9,13 @@ import AvaliacaoPet from './Components/AvaliacaoPet'
 import Lojas from './Components/Lojas'
 import FotoPet from './Components/FotoPet'
 import Filtro from './Components/Filtro'
+import ProcessoAgendamento from './Components/ProcessoAgendamento'
 
 function App() {
 
   return (
     <div className='flex justify-center items-center h-screen'>
-      <Filtro/>
+      <ProcessoAgendamento/>
     </div>
   )
 }
