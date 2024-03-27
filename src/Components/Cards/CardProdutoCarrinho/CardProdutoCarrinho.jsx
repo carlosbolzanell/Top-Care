@@ -33,9 +33,9 @@ const CardProdutoCarrinho = () => {
                 <p className="text-sm font-medium">Quantidade</p>
 
                 <div className="flex flex-row items-center gap-[0.4rem]">
-                    <button className="bg-secundaria w-6 h-6 rounded-md" onClick={diminuir}>-</button>
+                    <button className="bg-secundaria w-6 h-6 rounded-md hover:bg-verde-hover duration-500 active:scale-90" onClick={diminuir}>-</button>
                     <p className="flex items-center justify-center text-sm font-light p-2 border-cinza border-[1px] rounded-md w-8 h-8">{quantidade}</p>
-                    <button className="bg-secundaria w-6 h-6 rounded-md" onClick={aumentar}>+</button>
+                    <button className="bg-secundaria w-6 h-6 rounded-md hover:bg-verde-hover duration-500 active:scale-90" onClick={aumentar}>+</button>
                 </div>
             </div>
             <div className="flex flex-col items-center">

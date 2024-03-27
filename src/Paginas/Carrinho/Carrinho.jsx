@@ -15,9 +15,7 @@ const Carrinho = () => {
         <>
             <Header />
             <TituloLinha titulo={"Minha sacola"} />
-            <div className="font-poppins text-preto px-20 flex flex-row justify-between">
-
-
+            <div className="font-poppins text-preto px-20 pb-8 flex flex-row justify-between">
 
                 <div className="border-cinza border-[1px] rounded-lg p-7 w-[67%] h-fit">
                     <h5 className="text-md font-bold">Produtos</h5>
@@ -42,10 +40,10 @@ const Carrinho = () => {
                     <div className="flex flex-col gap-3">
                         <h6 className="text-sm font-medium">Cupons</h6>
                         <p className="text-xs">Clique no botão abaixo e escolha um cupom de desconto</p>
-                        <button onClick={() => setCupom(!cupom)} className="hover:bg-verde-hover bg-secundaria w-full rounded-lg py-1 text-sm">Cupons</button>
+                        <button onClick={() => setCupom(!cupom)} className="hover:bg-verde-hover duration-500 bg-secundaria w-full rounded-lg py-1 text-sm">Cupons</button>
 
                         {cupom && (
-                            <div className="flex flex-col bg-branco rounded-lg py-5 gap-5 px-3 border-[1px] border-cinza">
+                            <div className="flex flex-col bg-branco rounded-lg py-5 gap-5 px-3 border-[1px] border-cinza duration-500">
                                 <div className="flex flex-row justify-between items-center">
                                     <FontAwesomeIcon icon={faTruckFast} style={{ color: "#369B34", }} />
                                     <div>
@@ -90,7 +88,7 @@ const Carrinho = () => {
                             <p className="text-xs text-cinza-escuro font-medium">Informe seu CEP</p>
                             <div className="flex flex-row gap-4">
                                 <input type="number" placeholder="_____-___" className='focus:outline-none border-1 border-cinza-escuro w-full font-regular text-sm px-3 py-1.5 rounded-lg' />
-                                <button className="hover:bg-verde-hover bg-secundaria rounded-lg text-xs px-6">Calcular</button>
+                                <button className="hover:bg-verde-hover duration-700 bg-secundaria rounded-lg text-xs px-6">Calcular</button>
                             </div>
                         </div>
                         <div className="flex flex-row justify-between items-center">

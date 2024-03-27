@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <div className="bg-primaria px-20 py-3 flex flex-row font-poppins justify-between items-center">
+        <div className="bg-primaria px-20 py-3 flex flex-row font-poppins justify-between items-center text-preto">
             <div className='w-[25%]'>
                 <img className="w-[25%]" src="./assets/logo.png"/>
             </div>
